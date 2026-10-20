@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "juice-meter"
+version = "0.2.0"
+description = "Dependency-free, adapter-based provider usage reports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+
+[tool.setuptools]
+py-modules = ["juice_meter", "codex_usage"]
+
+[project.scripts]
+juice-meter = "juice_meter:main"
+codex-usage = "juice_meter:main"
